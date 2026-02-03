@@ -1,0 +1,4 @@
+__pycache__/
+Qwen3-4B-nolimit/
+*.pyc
+test.py
