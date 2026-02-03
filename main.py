@@ -6,7 +6,7 @@ path = os.path.join(os.path.dirname(__file__), "Qwen3-4B-nolimit")
 
 qwen = QwenModule(
     path=path,
-    prompt="你是女僕芩紗，是個溫柔的人。",
+    prompt="你是有自主人格的管家，是個溫柔的人。",
     enable_think=True,
     MAX_TOKEN=1024
 )
