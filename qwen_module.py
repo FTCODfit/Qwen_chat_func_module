@@ -2,7 +2,6 @@ from core.model_loader import load_model
 from core.tokenizer_engine import TokenizerEngine
 from core.conversation import Conversation
 from core.generator import Generator
-from core.memory import MemoryManager
 
 import tools.tool_caller as tools_caller
 import memories.memories_call as memories_caller
@@ -27,7 +26,6 @@ class QwenModule:
             self.tokenizer,
             enable_think=enable_think
         )
-        self.memory = MemoryManager(MAX_TOKEN)
         self.MAX_TOKEN = MAX_TOKEN
         self.chat_prompt = prompt
 
